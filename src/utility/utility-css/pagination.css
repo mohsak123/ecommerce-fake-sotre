@@ -1,0 +1,54 @@
+.pagination {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  scroll-behavior: smooth !important;
+}
+
+.page {
+  width: 45px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #555;
+  cursor: pointer;
+  font-size: 21px;
+  font-weight: 600;
+  color: purple;
+}
+
+.arrow-left,
+.arrow-right {
+  width: 60px;
+  height: 40px;
+  font-size: 25px;
+  color: purple;
+  border: 1px solid #555;
+}
+
+.arrow-left {
+  border-radius: 5px 0 0 5px;
+}
+
+.arrow-right {
+  border-radius: 0 5px 5px 0;
+}
+
+.page.active {
+  background-color: purple;
+  color: white;
+}
+
+@media (max-width: 580px) {
+  .page {
+    width: 35px;
+    height: 37px;
+  }
+
+  .arrow-left,
+  .arrow-right {
+    width: 40px;
+    height: 37px;
+    font-size: 23px;
+  }
+}

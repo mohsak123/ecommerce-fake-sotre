@@ -1,0 +1,40 @@
+.header-title {
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.header-title-head {
+  font-size: 50px;
+  color: #3f3e3e;
+  position: relative;
+}
+
+.header-title-head::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 3px;
+  background-color: purple;
+  bottom: -18px;
+  left: 5%;
+}
+
+.header-title-head::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid purple;
+  bottom: -29px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+
+@media (max-width: 420px) {
+  .header-title-head {
+    font-size: 38px;
+  }
+}

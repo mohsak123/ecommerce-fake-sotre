@@ -1,0 +1,161 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+  min-height: 89.4vh;
+}
+
+.header-info {
+  margin-top: 30px;
+}
+
+.header-info-title {
+  font-size: 50px;
+}
+
+.header-info-description {
+  font-size: 21px;
+  font-weight: 400;
+  color: gray !important;
+  margin: -10px 5px;
+}
+
+.header-info-search {
+  margin-top: 40px;
+  margin-left: 5px;
+}
+
+.header-info-search-title {
+  margin: 10px 8px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  color: purple;
+}
+
+.header-info-search input {
+  width: 450px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background-color: #eee;
+  outline: none;
+  padding: 10px 25px;
+}
+
+.search-btn {
+  width: 200px;
+  margin-top: 20px;
+  border: none;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: purple;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-left: 7px;
+}
+
+.header-img {
+  width: 550px;
+  animation: img infinite 7s;
+  margin-right: -20px;
+  margin-top: -30px;
+  position: relative;
+  z-index: -1;
+}
+
+.header-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@keyframes img {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10vh);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 1199px) {
+  .header-info {
+    margin-left: 10px;
+  }
+
+  .header-img {
+    width: 450px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    min-height: 89.5vh;
+  }
+  .header-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-info {
+    margin-left: 0;
+  }
+
+  .header-info-description {
+    width: 69%;
+  }
+
+  .header-info-search {
+    width: 90%;
+  }
+
+  .header-img {
+    width: 50%;
+    animation: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-info-description {
+    width: 75%;
+  }
+
+  .header-img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  .header {
+    height: 85vh;
+  }
+
+  .header-info-title {
+    font-size: 44px;
+    padding: 5.2px;
+  }
+
+  .header-info-description {
+    width: 85%;
+  }
+
+  .header-info-search input {
+    width: 325px;
+    margin-left: -6px;
+  }
+
+  .header-img {
+    display: none;
+  }
+}

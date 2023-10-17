@@ -1,0 +1,27 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
+.font {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.modal-content {
+  border: 1px solid #999 !important;
+}
+
+.modal-backdrop {
+  background-color: rgb(0 0 0 / 0.3) !important;
+}

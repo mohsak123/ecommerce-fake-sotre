@@ -1,0 +1,23 @@
+.rating {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.rate {
+  font-size: 17px;
+  font-weight: 700;
+  background-color: purple;
+  padding: 3px 6px;
+  border-radius: 8px;
+  width: 57px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.count {
+  font-size: 18px;
+  font-weight: bolder;
+}

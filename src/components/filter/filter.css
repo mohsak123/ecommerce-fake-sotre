@@ -1,0 +1,81 @@
+.filter-product-title,
+.price-product-title {
+  margin-left: 40px;
+}
+
+.filter-group,
+.price-group {
+  margin-left: 55px;
+  margin-top: 10px;
+}
+
+.filter-group input,
+.price-group input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.filter-label,
+.sort-label {
+  font-size: 18px;
+  cursor: pointer;
+  color: gray;
+}
+
+.price-product-title {
+  margin-top: 20px;
+}
+
+@media (max-width: 1199px) {
+  .filter-product-title,
+  .price-product-title {
+    margin-left: 10px;
+  }
+
+  .filter-group,
+  .price-group {
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .filter-product-title,
+  .price-product-title {
+    margin-left: 0;
+    font-size: 35px;
+    margin-bottom: 25px;
+    margin-left: 25%;
+  }
+
+  .filter-group,
+  .price-group {
+    margin-left: 50%;
+    transform: translateX(-45%);
+  }
+
+  .filter-label,
+  .sort-label {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .filter-product-title,
+  .price-product-title {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 23px;
+    margin-bottom: 14px;
+  }
+
+  .filter-group,
+  .price-group {
+    margin-left: 50%;
+    transform: translateX(-45%);
+  }
+
+  .filter-label,
+  .sort-label {
+    font-size: 16px;
+  }
+}
